@@ -85,7 +85,7 @@ h5 {
   font-size: 24px;
   font-weight: 500;
   line-height: 43px;
-  color: var(--clr-green-primary);
+  color: var(--clr-green-primary) !important;
   text-transform: capitalize;
 }
 
@@ -338,7 +338,8 @@ img {
   grid-gap: 50px;
   /* background: #000; */
 }
-.row-center{
+
+.row-center {
   justify-content: center;
 }
 
@@ -371,3 +372,238 @@ img {
 }
 
 /*Viddli Area Css End*/
+/*Services Area Css Start*/
+.section_title {
+  max-width: 1216px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.section_title .custom_btn {
+  margin: auto;
+}
+
+.section_title p span {
+  color: var(--clr-green-primary);
+}
+
+.section_title p {
+  margin: 30px 0px;
+}
+
+.inner_service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 44px 50px;
+  margin-top: 60px;
+}
+
+.service_card {
+  background: #0B5E6E;
+  text-align: center;
+  height: 100%;
+}
+
+.single_service:hover .service_card {
+  background: var(--clr-green-primary);
+  transition: 0.5s;
+}
+
+.single_service:hover .service_card .card-body p,
+.single_service:hover .service_card .card-body h5.card-title,
+.single_service:hover .card span::before {
+  color: #FFFFFF !important;
+}
+
+.single_service:hover svg path {
+  fill: #fff;
+}
+
+.card span {
+  font-size: 40px;
+}
+
+.card span::before {
+  content: "\e900";
+  color: #1AC2A9;
+}
+
+.service_card {
+  padding: 17px !important;
+  padding-bottom: 11px !important;
+}
+
+.service_card .card-body p {
+  color: #ADD6D6;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/*services Area Css End*/
+/*Tools Area Css start*/
+.tools_items {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 100px;
+}
+
+/*Tools Area Css End*/
+/*Client Area Css Start*/
+.client_banner {
+  background: url(../images/client-banner.png) no-repeat scroll center center / cover;
+}
+
+.client_banner .section_title {
+  max-width: 950px;
+  width: 100%;
+  margin: auto;
+  padding: 90px 0px;
+}
+
+/*Client Area Css End*/
+/*Streamers Area Css Start*/
+.Streamers_area .section_title {
+  max-width: 950px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.small_container {
+  max-width: 1274px;
+  width: 100%;
+  margin: auto;
+}
+
+.Streamers_top_card {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #1ac2a9;
+  filter: drop-shadow(0px 0px 17.5px rgba(30, 154, 149, 0.96));
+  background: rgba(10, 47, 61, 0);
+  margin-bottom: 80px;
+  border-radius: 12px;
+}
+
+.Streamers-inner-content {
+  padding: 30px 40px 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.streamers_left {
+  max-width: 695px;
+  width: 100%;
+}
+
+.streamers_left h5 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 91px;
+}
+
+.streamers_left h4 {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 76px;
+}
+
+.streamers_left .bold_pera {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.account_area {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 49px;
+}
+
+.linkButton {
+  display: flex;
+  align-items: center;
+  width: 310px;
+  height: 45px;
+  border: 1px solid #22efd1;
+  border-radius: 24px;
+  font-size: 14px;
+  background: rgba(26, 194, 169, 0.18);
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+.linkButton:hover {
+  color: #000000 !important;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.linkButton img {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+
+.streamers-right img {
+  max-width: 331px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.Streamers_bottom_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.streamers_single {
+  max-width: 586px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #1ac2a9;
+  border-radius: 12px;
+  filter: drop-shadow(0px 0px 17.5px rgba(30, 154, 149, 0.96));
+  background: rgba(10, 47, 61, 0);
+  padding: 50px 42px;
+  box-sizing: border-box !important;
+  gap: 102px;
+}
+
+.streamers_card .card-body>img {
+  border-radius: 18px;
+  width: 173px;
+  height: 173px;
+  object-fit: cover;
+}
+
+.streamers_card .card-body h5 {
+  font-size: 40px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.streamers_card .small_pera {
+  margin-bottom: 30px;
+}
+
+.streamers_card .linkButton {
+  margin: auto;
+}
+
+/*Streamers Area Css End*/
