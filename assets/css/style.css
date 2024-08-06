@@ -222,6 +222,7 @@ img {
   color: #e5eaf0;
   background-position: 100%;
 }
+
 /* Mobile menu */
 .mobileNav {
   position: absolute;
@@ -249,6 +250,7 @@ img {
   display: inline-block;
   margin-bottom: 28px;
 }
+
 /*Start Mobile Menu icon*/
 .mobile-menu {
   position: absolute;
@@ -314,4 +316,58 @@ img {
   top: 18px;
   left: 2px;
 }
+
 /*End Mobile Menu icon*/
+/*Hero Area Css Start*/
+.banner_area {
+  margin-top: 48px;
+  background: url(../images/banner.png) no-repeat scroll top right / cover;
+  background-size: 58% 100%;
+}
+
+.banner_content p {
+  margin: 48px 0px;
+}
+
+/*Hero Area Css End*/
+/*Viddli Area Css Start*/
+.viddli_inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 50px;
+  /* background: #000; */
+}
+.row-center{
+  justify-content: center;
+}
+
+.viddli_content h2 {
+  margin: 52px 0px;
+}
+
+.viddli_content h2 span {
+  color: var(--clr-green-primary);
+}
+
+.viddli_content p span {
+  color: var(--clr-green-primary);
+}
+
+.viddli_content .over_size {
+  font-size: 25px;
+}
+
+.viddli_content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 69px;
+}
+
+.viddli_content ul li img {
+  max-width: 210px;
+}
+
+/*Viddli Area Css End*/
