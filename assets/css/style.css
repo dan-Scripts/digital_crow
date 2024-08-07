@@ -1,10 +1,11 @@
-/* Font Family */
+/* Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;700&display=swap');
 
 /* Default Css */
 :root {
   --clr-green-primary: #39B54A;
+  --heading-shadow: 0px 0px 30px rgba(23, 200, 176, 0.67);
   --ff-caveat: 'Caveat', cursive;
   --ff-poppins: 'Poppins', sans-serif;
 }
@@ -16,7 +17,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-poppins);
   font-weight: 400;
   color: #FFFFFF;
   background: linear-gradient(to right, #07141D, #09503E, #081D22);
@@ -33,24 +34,11 @@ html {
 
 ul,
 ol {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
-}
-
 h1 {
-  filter: drop-shadow(0px 0px 30px rgba(23, 200, 176, 0.67));
+  filter: drop-shadow(var(--heading-shadow));
   font-size: 114px;
   font-weight: bold;
   line-height: 131px;
@@ -58,7 +46,7 @@ h1 {
 }
 
 h2 {
-  filter: drop-shadow(0px 0px 30px rgba(23, 200, 176, 0.67));
+  filter: drop-shadow(var(--heading-shadow));
   font-size: 70px;
   font-weight: bold;
   line-height: 91px;
@@ -66,7 +54,7 @@ h2 {
 }
 
 h3 {
-  filter: drop-shadow(0px 0px 30px rgba(23, 200, 176, 0.67));
+  filter: drop-shadow(var(--heading-shadow));
   font-size: 54px;
   font-weight: bold;
   line-height: 131px;
@@ -132,9 +120,7 @@ img {
   margin: auto;
 }
 
-/* ===================================================================
-                            Header Area CSS Start
-====================================================================*/
+/* Header Area Start */
 .header-area {
   background: linear-gradient(to right, #000C14, #024838, #002E25);
   z-index: 99999;
@@ -221,6 +207,7 @@ img {
 .custom_btn:hover {
   color: #e5eaf0;
   background-position: 100%;
+  cursor: pointer;
 }
 
 /* Mobile menu */
@@ -943,14 +930,13 @@ img {
 }
 
 .contactCaption p a {
-  color: #39B54A;
+  color: var(--clr-green-primary);
 }
 
 .contactCaption .custom_btn {
-  display: inline-block;
-  padding: 12px 49px;
   font-weight: 600;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .contactCaption .custom_btn i {
@@ -960,7 +946,7 @@ img {
 
 .contactCaption .custom_btn:hover i {
   transform: translateX(8px);
-  transition: all .7s ease;
+  transition: all .5s ease;
 }
 
 /*Contact area End*/
@@ -981,6 +967,10 @@ img {
   background: url(../images/footer-shape.png)no-repeat scroll center center / cover;
   background-size: 100%;
   z-index: -1;
+}
+
+.footerArea .row {
+  justify-content: space-around;
 }
 
 .footerLogo span {
@@ -1011,23 +1001,26 @@ img {
   margin-bottom: 30px;
 }
 
-.footerAddress span {
+.footerAddress a {
   display: inline-block;
   font-size: 16px;
   color: #fff;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
-.footerAddress span i {
+.footerAddress a i {
   font-size: 25px;
-  color: #39B54A;
+  color: var(--clr-green-primary);
   margin-right: 15px;
 }
 
-.footerAddress span .fa-phone-volume {
-  transform: rotate(336deg);
+.footerAddress a:last-child:hover .fa-phone-volume,
+.footerAddress a:first-child:hover .fa-envelope {
+  transform: rotate(-30deg);
+  transition: .2s;
 }
 
 .footerSocial {
@@ -1048,7 +1041,7 @@ img {
 }
 
 .footerSocial a:hover {
-  color: #39B54A;
+  color: var(--clr-green-primary);
 }
 
 .footerNavigation {
@@ -1067,13 +1060,16 @@ img {
 }
 
 .footerNavigation a:hover {
-  color: #39B54A;
+  color: var(--clr-green-primary);
 }
 
 .copyright {
   position: relative;
   text-align: center;
-  font-size: 20px;
   color: #879A92;
   padding: 15px 0;
+}
+
+.copyright p {
+  font-size: 12px !important;
 }
